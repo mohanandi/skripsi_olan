@@ -7,4 +7,8 @@ class Periksa_Model extends CI_Model
     {
         return $this->db->get_where('pertanyaan', ['pertanyaan_pertama' => '1'])->row_array();
     }
+    public function getQuestionBykode($kode)
+    {
+        return $this->db->get_where('pertanyaan', ['kode' => $kode])->row_array();
+    }
 }
