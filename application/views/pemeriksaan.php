@@ -52,7 +52,7 @@
                     <div class="bg-black text-center h-100 project">
                         <div class="d-flex h-100">
                             <div class="project-text w-100 my-auto text-center text-lg-left">
-                                <h2 class="text-white">Mulai Pemeriksaan Gitar</h2>
+                                <h2 class="text-white"><?= $pertanyaan['pertanyaan']; ?></h2>
                                 <a class="btn btn-primary mb-0 text-white-50" role="button" href="<?= base_url('Periksa/pemeriksaan/'); ?><?= $pertanyaan['yes'] ?>">
                                     Ya
                                 </a>
