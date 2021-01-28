@@ -11,4 +11,8 @@ class Periksa_Model extends CI_Model
     {
         return $this->db->get_where('pertanyaan', ['kode' => $kode])->row_array();
     }
+    public function getSolutionByKode($kode)
+    {
+        return $this->db->get_where('solusi', ['kode' => $kode])->row_array();
+    }
 }

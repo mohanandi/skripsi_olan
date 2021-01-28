@@ -43,7 +43,7 @@
         <div class="container">
             <ul class="body-tabs body-tabs-layout tabs-animated body-tabs-animated nav">
                 <li class="nav-item">
-                    <h4>Pertanyaan</h4>
+                    <h4>Kerusakan & Solusi</h4>
                 </li>
             </ul>
             <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
@@ -52,13 +52,7 @@
                     <div class="bg-black text-center h-100 project">
                         <div class="d-flex h-100">
                             <div class="project-text w-100 my-auto text-center text-lg-left">
-                                <h2 class="text-white"></h2>
-                                <a class="btn btn-primary mb-0 text-white-50" role="button" href="<?= base_url('Periksa/pemeriksaan/'); ?><?= $pertanyaan['yes'] ?>">
-                                    Ya
-                                </a>
-                                <a class="btn btn-primary mb-0 text-white-50" role="button" href="<?= base_url('Periksa/pemeriksaan/'); ?><?= $pertanyaan['no']; ?>">
-                                    Tidak
-                                </a>
+                                <h2 class="text-white"><?= $solusi['kerusakan']; ?></h2>
                                 <hr class="d-none d-lg-block mb-0 ml-0" />
                             </div>
                         </div>
@@ -68,12 +62,9 @@
                     <div class="bg-black text-center h-100 project">
                         <div class="d-flex h-100">
                             <div class="project-text w-100 my-auto text-center text-lg-left">
-                                <h2 class="text-white">Mulai Pemeriksaan Gitar</h2>
-                                <a class="btn btn-primary mb-0 text-white-50" role="button" href="<?= base_url('Periksa/pemeriksaan/'); ?><?= $pertanyaan['yes'] ?>">
-                                    Ya
-                                </a>
-                                <a class="btn btn-primary mb-0 text-white-50" role="button" href="<?= base_url('Periksa/pemeriksaan/'); ?><?= $pertanyaan['no']; ?>">
-                                    Tidak
+                                <h2 class="text-white"><?= $solusi['solusi']; ?></h2>
+                                <a class="btn btn-primary mb-0 text-white-50" role="button" href="<?= base_url('Periksa/'); ?>">
+                                    Ulangi Periksa Gitar
                                 </a>
                                 <hr class="d-none d-lg-block mb-0 ml-0" />
                             </div>
